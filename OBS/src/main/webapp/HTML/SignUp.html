@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link rel="icon" href="../IMAGES/OBS-6-28-2024.png">
+    <link rel="stylesheet" href="../CSS/Form.css">
+    <link rel="stylesheet" href="../CSS/HeaderAndFooter.css">
+    <script src="../Documents/jquery.js"></script>
+    <script src="../JS/manager.js"></script>
+</head>
+<body>
+    <div id="Header"></div>
+
+    <div class="main">
+        <div class="container">
+            <div class="form-section">
+                <h2>Create an Account</h2>
+                <p>SignUp to Continue</p>
+                <form id="create-account-form" action="" name="signupForm">
+                    <div class="form-group">
+                        <select id="select-usertype">
+                            <option value="customer">Customer</option>
+                            <option value="vendor">Vendor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="firstname" placeholder="Enter your Firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="lastname" placeholder="Enter your Lastname" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" name="address" required>Enter your Address</textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company-name" placeholder="Enter your Company Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company-location" placeholder="Enter your Company Location">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="gst-no" placeholder="Enter your GST No.">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="mobile-no" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="zip-code" placeholder="Enter your Zip Code" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="image" placeholder="insert your image">
+                    </div>
+                    <button><a href="login.html">Login</a></button>
+                    <button type="submit">SignUp</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="Footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link rel="icon" href="../IMAGES/OBS-6-28-2024.png">
+    <link rel="stylesheet" href="../CSS/Form.css">
+    <link rel="stylesheet" href="../CSS/HeaderAndFooter.css">
+    <script src="../Documents/jquery.js"></script>
+    <script src="../JS/manager.js"></script>
+</head>
+<body>
+    <div id="Header"></div>
+
+    <div class="main">
+        <div class="container">
+            <div class="form-section">
+                <h2>Login</h2>
+                <p>Welcome. please login into your account</p>
+                <form id="create-account-form">
+                    <div class="form-group">
+                        <select id="select-usertype">
+                            <option value="customer">Customer</option>
+                            <option value="vendor">Vendor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button><a href="SignUp.html">SignUp</a></button>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="Footer"></div>
+
+</body>
+</html>

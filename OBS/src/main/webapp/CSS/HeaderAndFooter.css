@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../IMAGES/Background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+    background-color: #292727;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header-full{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    padding: 10px 10px 0px 10px;
+}
+.header-main{
+    display: flex;
+    flex-direction: column;
+    width:85%;
+}
+
+.header-upper{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    margin: 0;
+    margin-right: 20px;
+    width: 15%;
+}
+
+#logoimage{
+    padding: 5%;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 7px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.searchbar{
+  width:100%;
+  max-width: 300px;
+  height: 50px;
+  background: rgba(225, 225, 225, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  ::placeholder{
+    color: #fff;
+  }
+}
+.searchbar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 20px 20px;
+  font-size: 13px;
+  color: #fff;
+}
+#searchbutton{
+  border:0;
+  border-radius: 20px;
+  height: 50px;
+  background: rgba(225, 225, 225, 0.2);
+  font-size: 13px;
+  color: #fff;
+
+}
+
+.navbar{
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+nav li {
+    padding: 10px 16px;
+}
+nav li:hover{
+  background: linear-gradient(to bottom, rgba(41, 39, 39, 0) 0%, rgba(225, 225, 225, 0.3) 100%);;
+  opacity: 0.7;
+}
+
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions a {
+    margin-right: 20px;
+}
+
+
+.footer {
+    background-color: #292727;
+    opacity: 0.7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.company-section,.policies-section,.help-section,.designed-by-section {
+    margin-right: 20px;
+}
+
+.company-section h3,.policies-section h3,.help-section h3,.designed-by-section h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.company-section ul,.policies-section ul,.help-section ul,.designed-by-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.company-section li,.policies-section li,.help-section li,.designed-by-section li {
+    margin-bottom: 10px;
+}
+
+
+
+.company-section svg,.policies-section svg,.help-section svg,.designed-by-section svg {
+    margin-right: 10px;
+}
+
+
+/* Small screens (mobile) */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+      }
+      .header {
+        flex-direction: column;
+      }
+      .logo {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+      }
+      #logoimage{
+          padding: 2%;
+      }
+      .navbar {
+        flex-direction: column;
+        font-size: 7px;
+      }
+      .nav ul {
+        flex-direction: column;
+      }
+      .nav li {
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        flex-direction: column;
+      }
+      .company-section, .policies-section, .help-section, .designed-by-section {
+        margin-bottom: 20px;
+      }
+}
+
+
+/* Medium screens (tablet) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .container {
+        flex-direction: row;
+      }
+      .header {
+        flex-direction: row;
+      }
+      .logo {
+        width: 20%;
+      }
+      .navbar {
+        flex-direction: row;
+        font-size: 11px;
+      }
+      .nav ul {
+        flex-direction: row;
+      }
+      .nav li {
+        margin-right: 20px;
+      }
+
+      .footer {
+        flex-direction: row;
+      }
+      .company-section, .policies-section, .help-section, .designed-by-section {
+        margin-right: 20px;
+      }
+}
+
+/* Large screens (desktop) */
+@media only screen and (min-width: 901px) {
+    .container {
+        flex-direction: row;
+      }
+      .header {
+        flex-direction: row;
+      }
+      .logo {
+        width: 15%;
+      }
+      .navbar {
+        flex-direction: row;
+      }
+      .nav ul {
+        flex-direction: row;
+      }
+      .nav li {
+        margin-right: 20px;
+      }
+      .footer {
+        flex-direction: row;
+      }
+      .company-section, .policies-section, .help-section, .designed-by-section {
+        margin-right: 20px;
+      }
+}
